@@ -11,7 +11,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4545/api/register", // <-- HTTP not HTTPS
+        "https://nextbackenss.onrender.com/api/register", // <-- HTTP not HTTPS
         { email, password }
       );
       setMessage(res.data);
